@@ -1,0 +1,109 @@
+:root {
+    --azul-boton: #1877f2;
+    --negro-texto: #1c1e21;
+    --blanco-background: #f0f2f5;
+    --verde-boton: #42b72a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header-principal {
+    background-color: var(--azul-boton);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+
+    a {
+        background-color: var(--blanco-background);
+        color: var(--azul-boton);
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 0 2px var(--negro-texto);
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.barnner {
+    background-image: url(img/foto-barnner1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mover 9s;
+
+    @keyframes mover {
+        from {
+            transform: scale(4);
+        }
+
+        to {
+            transform: scale(1);
+            transition: 1s;
+        }
+    }
+
+    a {
+        background-color: var(--azul-boton);
+        color: var(--blanco-background);
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 0 4px var(--negro-texto);
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.footer-pagina-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    a {
+        color: var(--azul-boton);
+        text-decoration: none;
+        border: 1px solid var(--azul-boton);
+        padding: 5px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+// ===========================pagina intro=================
+.header-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--azul-boton);
+
+    a {
+        color: var(--blanco-background);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
